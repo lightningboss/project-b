@@ -26,22 +26,18 @@ function makeActive(elem) {
   }
 }
 
-$(document).ready(function () {
-  $(".nav-icon").on("click", function () {
-    console.log("clickme!");
-  })
-  $(".nav-item").click(function () {
-    switch (this) {
-      case home = this:
-        makeActive("home");
-        break;
-      case location = this:
-        makeActive("location");
-        break;
-      case settings = this:
-        makeActive("settings");
-        break;
+$(document).ready(function() {
+    $(".nav-item").click(function() {
+      switch ($(this).attr("id")) {
+        case "home":
+          makeActive("home");
+          break;
+        case "location":
+          makeActive("location");
+          break;
+        case "settings":
+          makeActive("settings");
+          break;
       }
-  });
-  console.log("I am ready.");
-})
+    }); // .nav-item click
+  }) // document ready
