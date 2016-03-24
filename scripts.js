@@ -1,10 +1,10 @@
-function makeActive(elem) {
+function makeActive(elementName) {
   var home = $("#home");
   var location = $("#location");
   var settings = $("#settings");
   var activeItem = $(".nav-item-active");
 
-  switch (elem) {
+  switch (elementName) {
     case "home":
       activeItem.css("transform", "translateY(-149%)"); // This prevents the visibility of the divider
       home.addClass("active");
@@ -28,16 +28,7 @@ function makeActive(elem) {
 
 $(document).ready(function() {
     $(".nav-item").click(function() {
-      switch ($(this).attr("id")) {
-        case "home":
-          makeActive("home");
-          break;
-        case "location":
-          makeActive("location");
-          break;
-        case "settings":
-          makeActive("settings");
-          break;
-      }
-    }); // .nav-item click
+      var elementName = $(this).attr("id");
+      makeActive(elementName);
+    });
   }) // document ready
