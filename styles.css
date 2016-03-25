@@ -38,14 +38,14 @@ nav {
   text-transform: uppercase;
   color: #008CBA;
   cursor: pointer;
-  transition: all .8s cubic-bezier(.55,0,.1,1);
+  transition: all .4s cubic-bezier(.55,0,.1,1);
 }
 .nav-icon {
   width: 40px;
   height: 40px;
   margin: 5px;
   fill: #008CBA;
-  transition: all .8s cubic-bezier(.55,0,.1,1);
+  transition: all .4s cubic-bezier(.55,0,.1,1);
 }
 
 /* Active state */
