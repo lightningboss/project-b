@@ -4,6 +4,6 @@
 For the moment, this is a demo for a nice sidebar I've designed and built.
 
 ## How does it look?
-Just take a look at the animated picture. Alternatively, you can just clone or download the repo and experience it yourself!
+Just take a look at the animated picture. Or visit [this page](http://lightningboss.github.io/project-b) Alternatively, you can just clone or download the repo and experience it yourself!
 
 <img src="img/demo.gif" width="360" height="316">
